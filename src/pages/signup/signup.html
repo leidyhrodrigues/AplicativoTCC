@@ -1,0 +1,49 @@
+<ion-content padding class="appBackground">
+  <ion-card>
+    <ion-card-header>
+      Cadastro
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+
+        <ion-item>
+          <ion-label stacked>CPF</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.cpf"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Nome</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Endereço</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.endereco"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Município</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.municipio"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Telefone</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.telefone"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>E-mail</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="userData.password"></ion-input>
+        </ion-item>
+
+        <button ion-button full color="success" (click)="signup()">Registrar</button>
+        <a href="#" (click)="login()">Fazer login</a>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

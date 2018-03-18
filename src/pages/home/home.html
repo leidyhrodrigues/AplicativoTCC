@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Dados cliente</h2>
+  <p></p>
+  <h3>CPF: {{userDetails.cpf}}</h3>
+  <h3>Nome: {{userDetails.nome}}</h3>
+  <h3>Endereço: {{userDetails.endereco}}</h3>
+  <h3>Município: {{userDetails.municipio}}</h3>
+  <h3>Telefone: {{userDetails.telefone}}</h3>
+  <h3>E-mail: {{userDetails.email}}</h3>
+
+  <button ion-button color="primary" class="marginTop" (click)="logout()">Sair</button>
+  <button ion-button color="primary" (click)="edit()">Alterar</button>
+  <button ion-button color="primary" (click)="delete()">Excluir</button>
+</ion-content>

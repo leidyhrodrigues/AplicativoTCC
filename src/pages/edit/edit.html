@@ -1,0 +1,51 @@
+<ion-content padding class="appBackground">
+  <ion-card>
+    <ion-card-header>
+      Edição de cadastro de cliente
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+
+        <ion-item>
+          <ion-label stacked>E-mail</ion-label>
+          <ion-input disabled="true" type="text" [(ngModel)]="userData.email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>CPF</ion-label>
+          <ion-input disabled="true" type="text" [(ngModel)]="userData.cpf"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Nome</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Endereço</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.endereco"> {{userDetails.endereco}} </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Município</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.municipio"> {{userDetails.municipio}} </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Telefone</ion-label>
+          <ion-input type="text" [(ngModel)]="userData.telefone"> {{userDetails.telefone}} </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label stacked>Senha</ion-label>
+          <ion-input type="password" [(ngModel)]="userData.password"></ion-input>
+        </ion-item>
+
+        <button ion-button full color="success" (click)="edit()">Confirmar</button>
+        <button ion-button full color="success" (click)="backToHome()">Cancelar</button>
+
+        <a href="#" (click)="login()">Login</a>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
